@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hack Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+</head>
+<body>
+<section class="hero is-bold is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                A hackable site
+            </h1>
+            <h2 class="subtitle">
+                Everything is editable via http requests
+            </h2>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <div class="field">
+                    <label class="label">
+                        File Content
+                    </label>
+                    <div class="control is-loading">
+                        <textarea id="textarea" class="textarea">Test text</textarea>
+                    </div>
+                </div>
+                <div class="level">
+                    <div class="level-left">
+                        <button id="file-select" class="button is-static is-loading">Loading</button>
+                    </div>
+                    <div class="level-right">
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <a id="file-link" class="button is-text is-loading" href="">Loading</a>
+                            </div>
+                            <div class="control">
+                                <button id="reset-button" class="button">Reset</button>
+                            </div>
+                            <div class="control">
+                                <button id="save-button" class="button">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="column">-->
+                <!--<div class="panel">-->
+                    <!--<div class="panel-block">-->
+                        <!--Normal message-->
+                    <!--</div>-->
+                    <!--<div class="panel-block">Error message</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="content">
+            <h2>The rest of the page</h2>
+            <p>Here is the rest of the page, below the controls and forms for making changes and edits.</p>
+        </div>
+    </div>
+</section>
+<script defer src="main.js"></script>
+</body>
+</html>
